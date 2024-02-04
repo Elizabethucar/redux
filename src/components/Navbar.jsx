@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'//hämtart ut allt data som vi behöver från redux store state 
 
 const Navbar = () => {
 const amount = useSelector((store) => store.basket.amount)

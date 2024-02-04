@@ -7,7 +7,7 @@ const {products, total, amount} = useSelector((store)=> store.basket)
 
   return (
     <div className='py-4'>
-      {amount > 1 ? (<><div>
+      {amount > 0 ? (<><div>
       {products.map((item, i)=>
         <Product
          key={new Date().getTime + Math.random()}

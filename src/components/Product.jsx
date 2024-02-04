@@ -25,12 +25,12 @@ const Product = ({name, price, image, amount}) => {
           dispatch(removeItem({name}))
           return;
         }
-        dispatch(decreaseAmount({name}))}
-      }
+        dispatch(decreaseAmount({name}))
+      }}
       className='text-xl'>-</button>
       <p>{amount}</p>
       <button
-      onClick={()=>{ dispatch(increaseAmount({name}) )}}
+      onClick={()=>{ dispatch(increaseAmount({name})) }}
        className='text-xl'>+</button>
       </div>
      </div>
